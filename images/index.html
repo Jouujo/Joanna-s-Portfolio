@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Porfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hero-section">
+                <div class="hero-left">
+                  <div class="typewriter-container">
+                    <h2 class="static-heading">Hello World!</h2>
+                    <h1 class="typewriter-wrapper">
+                      <span id="typed-text"></span><span class="cursor"></span>
+                    </h1>
+                  </div>                
+                  <div class="social-links">
+                    <a href="https://github.com/jouujo" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/joanna-chimalilo-766a15237/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="hero-right">
+                  <img src="stand.png" alt="illustration" class="hero-img" />                 
+                </div>
+              </div>
+              
+        </div>
+    </div>
+    <div class="scroll-indicator">
+        <i class="fas fa-angle-down"></i>
+      </div>  
+      <section id="about" class="about-section">
+        <div class="about-flex">
+            <div class="about-text">
+            <h2 class="section-title">About Me!</h2>
+            <p class="about-text">
+                Hi! I'm Joanna Chimalilo, a rising junior at Texas Tech University, double majoring in Computer Science and Economic Data Analysis (EDA). I'm passionate about software engineering, data science, and building projects that create meaningful impact in the world.
+
+
+                Beyond tech, I love mentoring, fostering community, reading, and learning new things.
+
+                I'm currently a peer tutor at the TECHniques Center, where I support students with learning disabilities — primarily in computer science. I also serve on the outreach committee for the Society of Women Engineers at Texas Tech and volunteer as a tutor for Learn to Be, a nonprofit dedicated to providing academic support to marginalized K–12 students across the U.S.
+            </p>
+        </div>
+        <div class="about-photo">
+            <img src="headshot.jpg" alt="Joanna's Headshot"/>
+        </div>
+    </div>
+</section>
+    <section id="portfolio" class="portfolio-section">
+        <h2 class="section-title">Portfolio</h2>
+      
+        <div class="project-flex">
+          <div class="project-image">
+            <img src="nesthub.png" alt="NestHub Project Screenshot" />
+          </div>
+      
+          <div class="project-info">
+            <h3>NestHub</h3>
+            <p>NestHub is a resource discovery platform built for immigrants in Texas, offering real-time listings for housing, job openings, food assistance, and local community support. I contributed to backend and data workflows, using Python and BeautifulSoup to scrape and structure public data. On the frontend, we used React to create a clean, responsive UI, with designs prototyped in Figma.
+
+                We also implemented a user contribution feature, allowing new resources to be submitted and reviewed. NestHub won the Best DEI Hack at Black Wings Hacks 2024 and was inspired by our team’s shared experiences as immigrants and women of color.</p>
+      
+            <div class="tech-icons">
+              <img src="react.png" alt="React" title="React" />
+              <img src="python.png" alt="Python" title="Python" />
+              <img src="python.png" alt="BeautifulSoup" title="BeautifulSoup" />
+            </div>
+            <a href="https://github.com/chhavi-shah/NestHub" class="project-link" target="_blank">View Project →</a>
+            </div>
+            </div>
+
+            <div class="project-flex">
+                <div class="project-image">
+                  <img src="beats.png" alt="Beats Project Screenshot" />
+                </div>
+            
+                <div class="project-info">
+                  <h3>Beats by Dr. Dre -- Consumer Insights Analytics Externship</h3>
+                  <p>As part of a virtual externship with Beats, I worked on extracting and analyzing user behavior data from over 50,000 records using SQL, Pandas, and Tableau. I uncovered key trends around product engagement and usage, and presented actionable insights to cross-functional teams across marketing, product, and engineering — helping inform future feature development and roadmap decisions.</p>
+            
+                  <div class="tech-icons">
+                    <img src="nlp.png" alt="NLP" title="Natural Language Processing " />
+                    <img src="python.png" alt="Python" title="Python" />
+                    <img src="Pandas.png" alt="Pandas" title="Pandas" />
+                  </div>
+      
+            <a href="https://colab.research.google.com/drive/1xa8aZnK8TN7H8xAkBmjxktCW2UCKa7Na?usp=sharing" class="project-link" target="_blank">View Project →</a>
+          </div>
+        </div>
+
+        <div class="project-flex">
+            <div class="project-image">
+              <img src="uchicago.png" alt="UChicago Trading Bot Competition" />
+            </div>
+        
+            <div class="project-info">
+              <h3>UChicago Trading Competition 2025 - Team TexasTech</h3>
+              <p>Developed a multi-strategy trading bot for the UChicago 2025 Trading Competition, focused on real-time market simulation across five assets. The bot used gRPC to interface with the competition exchange and integrated structured news to support algorithmic trading decisions.
+
+                I contributed to the design of risk-aware trading strategies, including smart order execution, momentum-based allocation, and dynamic short-covering logic. The system was built in Python and deployed on a single virtual machine, with a Flask-based dashboard (Phoenixhood) for live monitoring of portfolio performance and order activity.</p>
+        
+              <div class="tech-icons">
+                <img src="gRPC.png" alt="NLP" title="Natural Language Processing " />
+                <img src="python.png" alt="Python" title="Python" />
+                <img src="numpy.png" alt="Pandas" title="Pandas" />
+              </div>
+  
+        <a href="https://github.com/Jouujo/uchicago-tradingcompetitionbot" class="project-link" target="_blank">View Project →</a>
+      </div>
+    </div>
+    <div class="project-flex">
+        <div class="project-image">
+          <img src="interntrackr.png" alt="InternTrackr Coming Soon Preview" />
+        </div>
+      
+        <div class="project-info">
+          <h3>InternTrackr <span class="status-tag">— In Progress</span></h3>
+          <p>
+            A student-focused platform to organize and track internship applications, deadlines, and progress. Built with React, Python and JavaScript; InternTrackr aims to simplify the recruiting season with a clean UI and smart reminders. Currently under development — launching soon!
+          </p>
+          <div class="tech-icons">
+            <img src="python.png" alt="React" title="Python" />
+            <img src="react.png" alt="Firebase" title="React" />
+          </div>
+        </div>
+      </div>
+      
+    <div class="resume-download">
+        <a href="https://docs.google.com/document/d/1V_WHlBS1L1TOeGWOt6Kzpgnv13lHPJ1bTZMX1RXxgBM/edit?usp=sharing" target="_blank" class="resume-btn">
+          📄 View My Resume!
+        </a>
+      </div>      
+      </section>
+      <section id="extra-projects">
+        <h2 class="section-title">Other Fun Projects</h2>
+        <ul class="mini-projects">
+          <li><a href="https://github.com/Jouujo/GeminiAIInsights/tree/main" target="_blank">Gemini AI Insights Reviewer</a> -  An AI-powered review analysis tool developed during my Consumer Insights Data Analytics Externship at Beats by Dre. Leveraging Google’s Gemini 1.5 Flash model, this project synthesizes customer feedback into actionable insights by summarizing product reviews, highlighting sentiment trends, and suggesting data-driven improvements. Designed to support product and marketing teams in making informed decisions through scalable, automated analysis of qualitative feedback.</li>
+          <li><a href="https://github.com/Jouujo/GRADMAP-Research/blob/main/README.md" target="_blank">University of Maryland, GRAD-MAP Research</a> -A Python-based research project from the UMD GRAD-MAP Winter Workshop. I analyzed real exoplanet transit data using light curves and MCMC modeling to uncover planetary parameters.</li>
+          <li><a href="https://github.com/Jouujo" target="_blank">View my Github!</a></li>
+        </ul>
+      </section>
+      <section id="contact" class="contact-section">
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="contact-text">
+          I am happy to connect, speak about opportunties, and mentorship! 
+        </p>
+        <ul class="contact-links">
+          <li><a href="mailto:georgejoanna086@gmail.com">📧 Gmail</a></li>
+          <li><a href="https://www.linkedin.com/in/joanna-chimalilo-766a15237" target="_blank">💼 LinkedIn</a></li>
+          <li><a href="https://github.com/Jouujo" target="_blank">💻 GitHub</a></li>
+          <li><a href="https://devpost.com/georgejoanna086?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" target="_blank">🚀 Devpost</a></li>
+        </ul>
+      </section>
+
+      <div class="chatbot-container"> 
+        <div id="chat-window"></div>
+      
+        <div class="chat-input">
+          <input type="text" id="user-input" placeholder="Ask me anything..." />
+          <button onclick="sendMessage()">Send</button>
+        </div>
+      </div>
+      
+      
+      
+    <script>
+        const textArray = [
+          "My name is Joanna!",
+          "I am a rising junior at Texas Tech University, Wreck 'Em Tech!",
+          "I love all things software engineering & data!",
+          "I enjoy building projects that create a change!",
+          "Happy to connect!"
+        ];
+        const typedText = document.getElementById("typed-text");
+        let index = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+      
+        function typeLoop() {
+          const currentText = textArray[index];
+          if (isDeleting) {
+            charIndex--;
+            typedText.textContent = currentText.substring(0, charIndex);
+            if (charIndex === 0) {
+              isDeleting = false;
+              index = (index + 1) % textArray.length;
+              setTimeout(typeLoop, 500);
+            } else {
+              setTimeout(typeLoop, 50);
+            }
+          } else {
+            charIndex++;
+            typedText.textContent = currentText.substring(0, charIndex);
+            if (charIndex === currentText.length) {
+              isDeleting = true;
+              setTimeout(typeLoop, 1200);
+            } else {
+              setTimeout(typeLoop, 100);
+            }
+          }
+        }
+      
+        document.addEventListener("DOMContentLoaded", typeLoop);
+        const chatbotResponses = {
+            "name": "Hi! I'm Joanna Chimalilo — a Computer Science + Economic Data Analysis student at Texas Tech.",
+            "school": "I'm a rising junior at Texas Tech University, Go Red Raiders!",
+            "projects": "I’ve worked on various projects including but not limited to; NestHub, InternTrackr, Beats Analytics, and a trading bot for UChicago. View my Github & Linkedin for more!",
+            "interntrackr": "InternTrackr is a web app I'm building to help students track internship applications.",
+            "resume": "You can view my resume by clicking the button right under my projects!",
+            "contact": "Reach me at georgejoanna086@gmail.com or on LinkedIn!",
+            "favorite project": "One of my favorite projects is NestHub! I worked on it with 2 peers for a hackathon, and it is an application made for immigrants by immigrants.",
+            "current job": "Joanna is currently a peer tutor at the TECHniques Center, where she works with students with learning disabilities, assisting them in CS subjects!",
+            "hi": "Hello!, Ask me anything you would like to know about Joanna!",
+            "hey": "Hello!, Ask me anything you would like to know about Joanna!"
+          };
+          
+          function sendMessage() {
+            const input = document.getElementById("user-input").value.toLowerCase();
+            const chatWindow = document.getElementById("chat-window");
+          
+            let reply = "Hmm, I’m still learning that! Try asking about my projects, school, or resume.";
+          
+            for (const keyword in chatbotResponses) {
+              if (input.includes(keyword)) {
+                reply = chatbotResponses[keyword];
+                break;
+              }
+            }
+          
+            chatWindow.innerHTML += `<div class="user-msg">You: ${input}</div>`;
+            let botMsg = document.createElement("div");
+            botMsg.className = "bot-msg";
+            botMsg.textContent = "Joanna: ";
+            chatWindow.appendChild(botMsg);
+
+            let i = 0;
+            function typeWriter() {
+                if (i < reply.length) {
+                    botMsg.textContent += reply.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 30);
+  }
+}
+typeWriter();
+
+            document.getElementById("user-input").value = "";
+          }
+          
+      </script>
+      
+</body>
+</html>
