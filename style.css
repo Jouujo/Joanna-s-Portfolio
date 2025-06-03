@@ -438,6 +438,45 @@ nav ul li a:hover::after{
   button:hover {
     background: #ffb3c6;
   }
+.timeline {
+  position: relative;
+  padding-left: 30px;
+  border-left: 2px solid #c8102e;
+  margin-top: 40px;
+}
+
+.event {
+  position: relative;
+  margin: 30px 0;
+}
+
+.dot {
+  position: absolute;
+  left: -9px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  background: #c8102e;
+  border-radius: 50%;
+}
+
+.label {
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+  cursor: pointer;
+}
+
+.description {
+  font-size: 0.95rem;
+  margin-top: 5px;
+  color: #444;
+  display: none;
+}
+
+.event:hover .description {
+  display: block;
+}
+
   
     
   
