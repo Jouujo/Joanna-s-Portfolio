@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', monospace;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 
 }
@@ -183,13 +183,9 @@ nav ul li a:hover::after{
     font-size: 1.1rem;
     font-family: 'Courier New', monospace;
     font-weight: bold ;
-    line-height: 2;
-    margin-bottom: 20px;
+    line-height: 1.7;
     max-width: 700px;
   }
-.about-text p{
-    margin-bottom:20px;
-}
   .about-flex{
     display: flex;
     justify-content: space-between;
@@ -438,98 +434,47 @@ nav ul li a:hover::after{
   button:hover {
     background: #ffb3c6;
   }
-/* Timeline Container */
-.timeline-container {
+  .timeline {
+  position: relative;
+  padding-left: 30px;
+  border-left: 2px solid #c8102e;
+}
+
+.event {
+  position: relative;
+  margin: 24px auto;
+  background: #fff5f7;
+  border-radius: 12px;
+  padding: 32px 24px 24px 24px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+  min-height: 180px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  position: relative;
-  margin: 60px auto;
-  width: 90%;
-  max-width: 1000px;
-  border-top: 2px solid #c8102e;
-  padding-top: 30px;
+  transition: transform 0.3s ease;
 }
 
-/* Individual Event Block */
-.timeline-event {
-  position: relative;
-  text-align: center;
-  flex: 1;
-}
-
-/* Dot Style */
-.timeline-event .dot {
+.dot {
   width: 18px;
   height: 18px;
-  background-color: #c8102e;
+  background: #2f2f2f;
   border-radius: 50%;
-  margin: 0 auto;
-  position: relative;
-  top: -10px;
+  margin-bottom: 12px;
 }
 
-/* Popup on Hover */
-.timeline-event .popup {
-  visibility: hidden;
-  opacity: 0;
-  background-color: #fff;
-  color: #2f2f2f;
+.label {
+  font-weight: bold;
   font-family: 'Courier New', monospace;
-  font-size: 0.9rem;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  position: absolute;
-  top: -100px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 220px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
-  z-index: 5;
+  font-size: 1.1rem;
+  color: #2f2f2f;
+  margin-bottom: 10px;
 }
 
-/* Show popup on hover */
-.timeline-event:hover .popup {
-  visibility: visible;
-  opacity: 1;
-}
-
-/* Responsive: Stack vertically on mobile */
-@media screen and (max-width: 768px) {
-  .timeline-container {
-    flex-direction: column;
-    align-items: flex-start;
-    border-top: none;
-    border-left: 2px solid #c8102e;
-    padding-left: 20px;
-    height: auto;
-  }
-
-  .timeline-event {
-    flex-direction: row;
-    align-items: center;
-    text-align: left;
-    margin: 40px 0;
-  }
-
-  .timeline-event .dot {
-    margin: 0;
-    margin-right: 12px;
-    position: relative;
-    left: 0;
-  }
-
-  .timeline-event .popup {
-    top: 0;
-    left: 40px;
-    transform: scale(1);
-    width: 220px;
-    text-align: left;
-  }
-
-  .timeline-event:hover .popup {
-    transform: scale(1);
-  }
+.description {
+  font-size: 0.98rem;
+  margin-top: 5px;
+  color: #444;
+  display: block;
+  text-align: center;
 }
