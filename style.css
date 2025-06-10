@@ -455,13 +455,6 @@ nav ul li a:hover::after{
   transition: transform 0.3s ease;
 }
 
-.dot {
-  width: 18px;
-  height: 18px;
-  background: #2f2f2f;
-  border-radius: 50%;
-  margin-bottom: 12px;
-}
 
 .label {
   font-weight: bold;
@@ -477,4 +470,5 @@ nav ul li a:hover::after{
   color: #444;
   display: block;
   text-align: center;
+  font-family: 'Courier New', monospace; 
 }
