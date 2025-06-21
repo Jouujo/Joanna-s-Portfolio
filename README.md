@@ -1,6 +1,6 @@
 # Joanna Chimalilo's Portfolio 🌸
 
-Welcome to my personal portfolio website! This site was fully designed and developed by me using **HTML**, **CSS**, and **JavaScript** — no frameworks, no templates.
+Welcome to my personal portfolio website! This site was fully designed and developed by me using **HTML**, **CSS**, and **JavaScript**.
 
 It’s a space to showcase who I am, what I’ve built, and what I’m passionate about.
 
@@ -24,7 +24,7 @@ It’s a space to showcase who I am, what I’ve built, and what I’m passionat
 ## Key Features
 
 ### Smooth Scrolling Navigation  
-Clicking nav links scrolls to each section — no reloads.
+Clicking nav links scrolls to each section.
 
 ### Custom Chatbot  
 A lightweight JavaScript chatbot that responds to user questions about me using a hardcoded JSON dictionary. It includes a typewriter-style typing animation and fits the pastel aesthetic.
