@@ -179,7 +179,7 @@ nav ul li a:hover::after{
     margin-bottom: 20px;
   }
   
-  .about-text {
+  .about-text p {
     font-size: 1.1rem;
     font-family: 'Courier New', monospace;
     font-weight: bold ;
