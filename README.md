@@ -7,7 +7,7 @@ It’s a space to showcase who I am, what I’ve built, and what I’m passionat
 ---
 
 ## 🖼 Live Site  
-👉 [Joanna's Portfolio](https://joannaportfolio.vercel.app/)
+👉 [Joanna's Portfolio]([https://joannaportfolio.vercel.app/](https://joannaportfolio-git-main-jouujos-projects.vercel.app/))
 
 ---
 
@@ -74,4 +74,4 @@ You can connect with me at:
 
 ## 🧠 Bonus Notes
 
-This portfolio is a living project — I plan to iterate on the chatbot and launch **InternTrackr** as a fully working tool. Stay tuned!
+This portfolio is a living project — I plan to iterate on the chatbot and launch **InternTrackr** & **Academic Mini Crossword** as a fully working tool. Stay tuned!
