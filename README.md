@@ -7,7 +7,7 @@ It’s a space to showcase who I am, what I’ve built, and what I’m passionat
 ---
 
 ## 🖼 Live Site  
-👉 [Joanna's Portfolio](https://joannaportfolio-git-main-jouujos-projects.vercel.app/))
+👉 [Joanna's Portfolio](https://joannaportfolio-git-main-jouujos-projects.vercel.app/)
 
 ---
 
