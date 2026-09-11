@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>Joanna Chimalilo | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
@@ -17,6 +17,7 @@
                     <li><a href="#about">About Me</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#timeline">Milestones</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -29,37 +30,41 @@
                     </h1>
                   </div>                
                   <div class="social-links">
-                    <a href="https://github.com/jouujo" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/joanna-chimalilo-766a15237/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Jouujo" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/joanna-chimalilo-766a15237/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://devpost.com/georgejoanna086" target="_blank" aria-label="Devpost"><i class="fas fa-code"></i></a>
                   </div>
                 </div>
                 <div class="hero-right">
-                  <img src="./images/stand.png" alt="illustration" class="hero-img" />                 
+                  <img src="./images/stand.png" alt="Hero illustration" class="hero-img" />                  
                 </div>
             </div>
         </div>
     </div>
 
     <div class="scroll-indicator">
-        <i class="fas fa-angle-down"></i>
+        <a href="#about"><i class="fas fa-angle-down"></i></a>
     </div>
 
     <!-- ABOUT SECTION -->
     <section id="about" class="about-section">
         <div class="about-flex">
             <div class="about-text">
-                <h2 class="section-title">About Me!</h2>
-                <p class="about-text">
-                    Hi! I'm Joanna Chimalilo — a rising senior at Texas Tech University, majoring in Computer Science. I'm passionate about software engineering, data science, and creating meaningful, user-centered projects that drive real-world impact.
+                <h2 class="section-title">About Me</h2>
+                <p>
+                    Hi! I'm <strong>Joanna Chimalilo</strong> — a Computer Science and Mathematics student at Texas Tech University, graduating in <strong>Spring 2027</strong>. Originally from <strong>Dar es Salaam, Tanzania</strong> 🇹🇿, my journey in technology is deeply driven by purpose: building technical systems that solve real problems and creating pathways for communities that need them most.
                 </p>
                 <p>
-                    My academic journey began at South Plains College, where I earned my Associate of Science in General Studies. During my time there, I worked as a peer tutor at the STAR Center, helping students succeed in a range of subjects, and served as a Resident Assistant, building a safe and supportive community on campus. These roles helped shape my dedication to mentorship and accessibility in education.
+                    That dedication to giving back birthed <strong>Kimbilio la Binti</strong>, a non-profit initiative rooted in uplifting, mentoring, and creating educational and personal development opportunities for young girls back home. Whether I'm building community initiatives or writing code, my ultimate goal is using my skills to create lasting, tangible impact.
                 </p>
                 <p>
-                    Currently, I am a senior at Texas Tech University, pursuing a Bachelor of Science in Computer Science, with a minor in Mathematics. I work as a peer tutor at the TECHniques Center at Texas Tech, supporting students with learning disabilities in computer science courses. I also serve on the outreach committee for the Society of Women Engineers, helping introduce more students — especially girls — to opportunities in STEM. In addition, I volunteer with Learn to Be, a nonprofit that offers free tutoring to K–12 students from underserved backgrounds across the U.S.
+                    Technically, my focus spans software engineering, full-stack web applications, and data-driven computational research. Currently, I work as a Research Engineer at <strong>STARLabs</strong>, participate in the <strong>Break Through Tech ('26–'27)</strong> fellowship, previously worked as a Software Engineer Intern at <strong>Classed</strong>, and conducted computational astrophysics research with the <strong>University of Maryland GRAD-MAP</strong> program.
                 </p>
                 <p>
-                    Outside of academics, I love mentoring, building inclusive communities, reading, and constantly learning new things. Whether through code or community, I'm driven by the idea of using my skills to build tools that matter.
+                    On campus, I serve as a Master Peer Tutor at the <strong>TECHniques Center</strong>, mentoring students with learning differences across algorithms and systems programming, and stay active in student outreach through the Society of Women Engineers (SWE) and the LYFE mentorship program.
+                </p>
+                <p>
+                    I am actively seeking <strong>New Grad Software Engineering, Full-Stack Development, and Data Engineering roles</strong> starting Summer 2027.
                 </p>
             </div>
             <div class="about-photo">
@@ -70,36 +75,66 @@
 
     <!-- EXPERIENCE SECTION -->
     <section id="experience" class="experience-section">
-        <h2 class="section-title">Experience</h2>
+        <h2 class="section-title">Experience &amp; Research</h2>
         <div class="exp-title-underline"></div>
         <div class="experience-grid">
-             <div class="exp-card">
+            
+            <div class="exp-card">
                 <div class="exp-card-top-bar"></div>
-                <div class="exp-card-icon icon-work">🎧</div>
-                <span class="exp-tag tag-work">Internship</span>
-                <h3 class="exp-role">AI Engineer Intern</h3>
-                <p class="exp-org">NightShift AI</p>
-                <p class="exp-date">June 2026 - August 2026</p>
+                <div class="exp-card-icon icon-research">🔬</div>
+                <span class="exp-tag tag-research">Research</span>
+                <h3 class="exp-role">Research Engineer</h3>
+                <p class="exp-org">STARLabs</p>
+                <p class="exp-date">2026 – Present</p>
                 <div class="exp-divider"></div>
                 <ul class="exp-bullets">
-                    <li>Developing and maintainining software components for an AI agent orchestration platform using React, Next.js, and RESTful APIs, contributing to a system that coordinates task execution across humans and AI agents.</li>
-                    <li>Building integrations with large language model providers including Claude and OpenAI, contributing to an agent-agnostic architecture that enables flexible AI-powered task delegation at scale.</li>
-                    <li>Designing and optimizing backend services, database schemas, and APIs for real-time task management and agent coordination, while supporting cloud deployment workflows using Docker and Kubernetes</li>
+                    <li>Designing, developing, and benchmarking specialized scientific computing and software pipelines.</li>
+                    <li>Collaborating across cross-functional research teams to optimize data ingestion and analytical tools.</li>
+                </ul>
+            </div>
+
+            <!-- CLASSED SWE INTERN -->
+            <div class="exp-card">
+                <div class="exp-card-top-bar"></div>
+                <div class="exp-card-icon icon-work">💻</div>
+                <span class="exp-tag tag-work">Internship</span>
+                <h3 class="exp-role">Software Engineer Intern</h3>
+                <p class="exp-org">Classed</p>
+                <p class="exp-date">Previous Internship</p>
+                <div class="exp-divider"></div>
+                <ul class="exp-bullets">
+                    <li>Developed and maintained core full-stack features, building responsive front-end components and reliable back-end REST APIs.</li>
+                    <li>Engineered performant database queries and optimized data workflows to improve application responsiveness and user experience.</li>
+                    <li>Collaborated in an agile engineering workflow participating in code reviews, bug fixes, and continuous integration/deployment.</li>
+                </ul>
+            </div>
+
+            <div class="exp-card">
+                <div class="exp-card-top-bar"></div>
+                <div class="exp-card-icon icon-fellowship">✨</div>
+                <span class="exp-tag tag-fellowship">Fellowship</span>
+                <h3 class="exp-role">Break Through Tech Fellow</h3>
+                <p class="exp-org">Break Through Tech</p>
+                <p class="exp-date">2026 – 2027</p>
+                <div class="exp-divider"></div>
+                <ul class="exp-bullets">
+                    <li>Selected for a cohort program designed to accelerate women and non-binary students in computing and AI.</li>
+                    <li>Engaged in intensive technical projects and mentorship spanning machine learning and full-stack software development.</li>
                 </ul>
             </div>
 
             <div class="exp-card">
                 <div class="exp-card-top-bar"></div>
                 <div class="exp-card-icon icon-research">🔭</div>
-                <span class="exp-tag tag-research">Internship</span>
+                <span class="exp-tag tag-research">Research</span>
                 <h3 class="exp-role">Undergraduate Computational Astronomy Researcher</h3>
-                <p class="exp-org">University of Maryland — Department of Astronomy & Physics</p>
+                <p class="exp-org">University of Maryland — Dept. of Astronomy &amp; Physics</p>
                 <p class="exp-date">June 2025 – August 2025</p>
                 <div class="exp-divider"></div>
                 <ul class="exp-bullets">
-                    <li>Studied time variability in 3D GCMs of Hot Jupiter atmospheres under Dr. Hayley Beltz</li>
-                    <li>Analyzed MITgcm output to track temperature, wind, and tracer fields across timesteps</li>
-                    <li>Generated time-averaged profiles to support interpretation of spectroscopic observations</li>
+                    <li>Investigated atmospheric time variability in 3D General Circulation Models (GCMs) of Hot Jupiters under Dr. Hayley Beltz.</li>
+                    <li>Analyzed high-dimensional MITgcm simulation output to track wind velocity, thermal profiles, and tracer fields across epochs.</li>
+                    <li>Developed automated Python post-processing workflows to generate time-averaged observational spectroscopic profiles.</li>
                 </ul>
             </div>
 
@@ -112,21 +147,22 @@
                 <p class="exp-date">2024</p>
                 <div class="exp-divider"></div>
                 <ul class="exp-bullets">
-                    <li>Selected for a distinguished fellowship focused on CyberInfrastructure development and Major/Mid-Scale Facilities</li>
-                    <li>Developed CI-related skill sets and engaged with CI-Compass and MF personnel</li>
+                    <li>Trained in large-scale CyberInfrastructure (CI) architecture supporting NSF Major and Mid-Scale research facilities.</li>
+                    <li>Engaged with national scientific computing leaders to explore distributed data pipelines and high-performance computing (HPC).</li>
                 </ul>
             </div>
 
             <div class="exp-card">
                 <div class="exp-card-top-bar"></div>
                 <div class="exp-card-icon icon-program">🌟</div>
-                <span class="exp-tag tag-program"></span>
+                <span class="exp-tag tag-program">Academic</span>
                 <h3 class="exp-role">Master Peer Tutor</h3>
-                <p class="exp-org">TECHniques Center - Texas Tech University</p>
-                <p class="exp-date">August 2024 -- Present</p>
+                <p class="exp-org">TECHniques Center — Texas Tech University</p>
+                <p class="exp-date">August 2024 – Present</p>
                 <div class="exp-divider"></div>
                 <ul class="exp-bullets">
-                    <li>Mentored 20+ students in algorithms, data structures, and systems programming in Python, Java, and C++, building deep fluency in problem-solving and code quality</li>
+                    <li>Mentored 25+ undergraduate students in Data Structures, Algorithms, OOP, and Systems Programming across Python, Java, and C++.</li>
+                    <li>Formulated personalized neuro-inclusive pedagogical strategies to help students develop diagnostic debugging and code quality habits.</li>
                 </ul>
             </div>
 
@@ -135,89 +171,110 @@
 
     <!-- PORTFOLIO SECTION -->
     <section id="portfolio" class="portfolio-section">
-        <h2 class="section-title">Portfolio</h2>
+        <h2 class="section-title">Featured Projects</h2>
 
+        <!-- NestHub -->
+        <div class="project-flex">
+            <div class="project-image">
+                <img src="./images/nesthub.png" alt="NestHub Project Screenshot" />
+            </div>
+            <div class="project-info">
+                <h3>NestHub <span class="status-tag award-tag">🏆 Best DEI Hack Winner</span></h3>
+                <p>
+                    NestHub is a resource aggregation platform built for immigrants and newcomers in Texas, consolidating housing, legal aid, food assistance, and community listings. Developed automated Python and BeautifulSoup web scrapers to structure public data into a queryable backend. Designed a clean, accessible React frontend with community-driven submission verification. Awarded <strong>Best Diversity, Equity, and Inclusion Hack</strong> at Black Wings Hacks.
+                </p>
+                <div class="tech-icons">
+                    <img src="./images/react.png" alt="React" title="React" />
+                    <img src="./images/python.png" alt="Python" title="Python" />
+                    <img src="https://cdn.simpleicons.org/javascript/f7df1e" alt="JavaScript" title="JavaScript" />
+                </div>
+                <div class="project-links-row">
+                    <a href="https://github.com/chhavi-shah/NestHub" class="project-link" target="_blank">GitHub →</a>
+                    <a href="https://devpost.com/software/nesthub" class="project-link" target="_blank">Devpost →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- HackWesTX 2nd Place -->
+        <div class="project-flex">
+            <div class="project-image">
+                <img src="./images/screenshot.png" alt="HackWesTX Winner Project" />
+            </div>
+            <div class="project-info">
+                <h3>DSA Arena &amp; Web3 Rewards <span class="status-tag award-tag">🥈 2nd Place @ HackWesTX</span></h3>
+                <p>
+                    A real-time, gamified multiplayer coding platform where users compete head-to-head on Data Structures and Algorithms problems, battle AI bots, and earn Solana crypto tokens upon successful test passes. Engineered room-based real-time match state, sandboxed code execution evaluation, and wallet integration.
+                </p>
+                <div class="tech-icons">
+                    <img src="./images/react.png" alt="React" title="React" />
+                    <img src="./images/python.png" alt="Python" title="Python" />
+                    <img src="https://cdn.simpleicons.org/solana/14F195" alt="Solana" title="Solana" />
+                </div>
+                <a href="https://github.com/Jouujo" class="project-link" target="_blank">View on GitHub →</a>
+            </div>
+        </div>
+
+        <!-- Academic Crossword -->
         <div class="project-flex">
             <div class="project-image">
                 <img src="./images/screenshot.png" alt="Academic Mini Crossword Project Screenshot" />
             </div>
             <div class="project-info">
                 <h3>Academic Mini Crossword</h3>
-                <p>The Academic Mini Crossword is a web application I developed to help tutors create and share 5x5 interactive crossword puzzles. Built with React, Next.js, TailwindCSS, Firebase, and Vercel, the app features automatic grid generation, a puzzle library, and a student-facing play mode with instant feedback. By reducing prep time and providing reusable, subject-tagged puzzles, it improves efficiency for tutors. At the same time, it gamifies review sessions for students, making academic practice more engaging and memorable.</p>
+                <p>
+                    Full-stack interactive puzzle engine designed for university peer tutors to gamify revision sessions. Built with Next.js, React, TailwindCSS, and Firebase. Features dynamic 5x5 grid generation, searchable subject libraries, and instant client-side answer evaluation to boost memory retention during exam reviews.
+                </p>
                 <div class="tech-icons">
                     <img src="./images/react.png" alt="React" title="React" />
-                    <img src="https://cdn.simpleicons.org/tailwindcss/38bdf8" alt="Tailwind CSS Logo" class="w-12 h-12" />
-                    <img src="https://cdn.simpleicons.org/Next.js/38bdf8" alt="Next.js Logo" class="w-12 h-12" />
+                    <img src="https://cdn.simpleicons.org/tailwindcss/38bdf8" alt="Tailwind CSS" title="Tailwind CSS" />
+                    <img src="https://cdn.simpleicons.org/nextdotjs/000000" alt="Next.js" title="Next.js" />
+                    <img src="https://cdn.simpleicons.org/firebase/ffca28" alt="Firebase" title="Firebase" />
                 </div>
-                <a href="https://academic-crossword.vercel.app/" class="project-link" target="_blank">View Project →</a>
+                <a href="https://academic-crossword.vercel.app/" class="project-link" target="_blank">Live Demo →</a>
             </div>
         </div>
 
-        <div class="project-flex">
-            <div class="project-image">
-                <img src="./images/nesthub.png" alt="NestHub Project Screenshot" />
-            </div>
-            <div class="project-info">
-                <h3>NestHub</h3>
-                <p>NestHub is a resource discovery platform built for immigrants in Texas, offering real-time listings for housing, job openings, food assistance, and local community support. I contributed to backend and data workflows, using Python and BeautifulSoup to scrape and structure public data. On the frontend, we used React to create a clean, responsive UI, with designs prototyped in Figma. We also implemented a user contribution feature, allowing new resources to be submitted and reviewed. NestHub won the Best DEI Hack at Black Wings Hacks 2024 and was inspired by our team's shared experiences as immigrants and women of color.</p>
-                <div class="tech-icons">
-                    <img src="./images/react.png" alt="React" title="React" />
-                    <img src="./images/python.png" alt="Python" title="Python" />
-                    <img src="./images/python.png" alt="BeautifulSoup" title="BeautifulSoup" />
-                </div>
-                <a href="https://github.com/chhavi-shah/NestHub" class="project-link" target="_blank">View Project →</a>
-            </div>
-        </div>
-
-        <div class="project-flex">
-            <div class="project-image">
-                <img src="./images/beats.png" alt="Beats Project Screenshot" />
-            </div>
-            <div class="project-info">
-                <h3>Beats by Dr. Dre — Consumer Insights Analytics Externship</h3>
-                <p>As part of a virtual externship with Beats, I worked on extracting and analyzing user behavior data from over 50,000 records using SQL, Pandas, and Tableau. I uncovered key trends around product engagement and usage, and presented actionable insights to cross-functional teams across marketing, product, and engineering — helping inform future feature development and roadmap decisions.</p>
-                <div class="tech-icons">
-                    <img src="./images/nlp.png" alt="NLP" title="Natural Language Processing" />
-                    <img src="./images/python.png" alt="Python" title="Python" />
-                    <img src="./images/Pandas.png" alt="Pandas" title="Pandas" />
-                </div>
-                <a href="https://colab.research.google.com/drive/1xa8aZnK8TN7H8xAkBmjxktCW2UCKa7Na?usp=sharing" class="project-link" target="_blank">View Project →</a>
-            </div>
-        </div>
-
+        <!-- UChicago Trading Competition -->
         <div class="project-flex">
             <div class="project-image">
                 <img src="./images/uchicago.png" alt="UChicago Trading Bot Competition" />
             </div>
             <div class="project-info">
-                <h3>UChicago Trading Competition 2025 — Team TexasTech</h3>
-                <p>Developed a multi-strategy trading bot for the UChicago 2025 Trading Competition, focused on real-time market simulation across five assets. The bot used gRPC to interface with the competition exchange and integrated structured news to support algorithmic trading decisions. I contributed to the design of risk-aware trading strategies, including smart order execution, momentum-based allocation, and dynamic short-covering logic. The system was built in Python and deployed on a single virtual machine, with a Flask-based dashboard (Phoenixhood) for live monitoring of portfolio performance and order activity.</p>
+                <h3>UChicago Algorithmic Trading Bot</h3>
+                <p>
+                    High-throughput, multi-strategy trading engine developed for the UChicago 2025 Trading Competition. Leveraged gRPC endpoints to consume real-time order book feeds and structured sentiment signals across 5 simultaneous assets. Implemented dynamic order sizing, momentum indicators, short-covering thresholds, and a live Flask/WebSocket monitoring dashboard.
+                </p>
                 <div class="tech-icons">
                     <img src="./images/gRPC.png" alt="gRPC" title="gRPC" />
                     <img src="./images/python.png" alt="Python" title="Python" />
                     <img src="./images/numpy.png" alt="NumPy" title="NumPy" />
                 </div>
-                <a href="https://github.com/Jouujo/uchicago-tradingcompetitionbot" class="project-link" target="_blank">View Project →</a>
+                <a href="https://github.com/Jouujo/uchicago-tradingcompetitionbot" class="project-link" target="_blank">View Repository →</a>
             </div>
         </div>
 
+        <!-- Beats Consumer Insights -->
         <div class="project-flex">
             <div class="project-image">
-                <img src="./images/interntrackr.png" alt="InternTrackr Coming Soon Preview" />
+                <img src="./images/beats.png" alt="Beats Consumer Analytics Project Screenshot" />
             </div>
             <div class="project-info">
-                <h3>InternTrackr <span class="status-tag">— In Progress</span></h3>
-                <p>A student-focused platform to organize and track internship applications, deadlines, and progress. Built with React, Python and JavaScript; InternTrackr aims to simplify the recruiting season with a clean UI and smart reminders. Currently under development — launching soon!</p>
+                <h3>Beats by Dre — Consumer Insights Pipeline</h3>
+                <p>
+                    Analyzed 50,000+ consumer feedback and usage telemetry records using SQL, Pandas, and Tableau to detect drop-off patterns and sentiment shifts. Augmented findings with a Gemini 1.5 LLM review synthesis pipeline to deliver structured product enhancement recommendations to product managers and engineers.
+                </p>
                 <div class="tech-icons">
                     <img src="./images/python.png" alt="Python" title="Python" />
-                    <img src="./images/react.png" alt="React" title="React" />
+                    <img src="./images/Pandas.png" alt="Pandas" title="Pandas" />
+                    <img src="https://cdn.simpleicons.org/googlegemini/8E75C2" alt="Google Gemini" title="Google Gemini AI" />
                 </div>
+                <a href="https://github.com/Jouujo/GeminiAIInsights" class="project-link" target="_blank">View on GitHub →</a>
             </div>
         </div>
 
         <div class="resume-download">
             <a href="https://texastechuniversity-my.sharepoint.com/:w:/g/personal/jchimali_ttu_edu/IQC7MsSl0j9oRbgOrkArrq5cAU06lDmqJa7Y1p9li07B2Vc?e=fNPWKY" target="_blank" class="resume-btn">
-                📄 View My Resume!
+                📄 View My Resume
             </a>
         </div>
     </section>
@@ -230,57 +287,64 @@
                 <div class="swiper-slide">
                     <div class="event">
                         <div class="dot"></div>
-                        <div class="label">NSF CyberInfrastructure Compass Fellowship</div>
-                        <div class="description">Participated in a distinctive Fellowship Program hosted by the National Science Foundation where I learnt about CyberInfrastructure development and Major/Mid-Scale Facilities; Developed CI-Related skill sets, and engaged with CI-Compass and MF personnel.</div>
+                        <div class="label">STARLabs Research Engineer</div>
+                        <div class="description">Leading computational engineering and software workflow development for high-impact analytical research projects.</div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="event">
                         <div class="dot"></div>
-                        <div class="label">Undergraduate Researcher — UMD, Department of Astronomy and Physics</div>
-                        <div class="description">Studying time variability in 3D GCMs of Hot Jupiter atmospheres under Dr. Hayley Beltz. Analyzing MITgcm output to track the evolution of temperature, wind, and tracer fields across timesteps. Working with MATLAB postprocessing scripts, exploring Python integration, and generating time-averaged profiles to support interpretation of spectroscopic observations.</div>
+                        <div class="label">Break Through Tech Fellow ('26–'27)</div>
+                        <div class="description">Selected into the national fellowship program for computing and AI innovation, collaborating on production-grade machine learning solutions.</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="event">
+                        <div class="dot"></div>
+                        <div class="label">Software Engineer Intern — Classed</div>
+                        <div class="description">Developed full-stack features, built scalable web endpoints, and contributed to product user-experience optimizations.</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="event">
+                        <div class="dot"></div>
+                        <div class="label">HackWesTX 2025 — 2nd Place Overall Winner</div>
+                        <div class="description">Co-created a real-time gamified DSA arena featuring Solana Web3 smart rewards and automated AI bot opponents.</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="event">
+                        <div class="dot"></div>
+                        <div class="label">Black Wings Hacks — Best DEI Award</div>
+                        <div class="description">Co-founded and launched NestHub, an immigrant resource navigation platform designed to bridge community support gaps.</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="event">
+                        <div class="dot"></div>
+                        <div class="label">Computational Astronomy — UMD GRAD-MAP</div>
+                        <div class="description">Simulated 3D atmospheric dynamics of Hot Jupiters using MITgcm outputs and developed spectroscopic post-processing workflows.</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="event">
+                        <div class="dot"></div>
+                        <div class="label">NSF CI-Compass Fellowship</div>
+                        <div class="description">Investigated CyberInfrastructure, distributed scientific data facilities, and high-performance computing workflows.</div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="event">
                         <div class="dot"></div>
                         <div class="label">Wayfair Early Leaders Program</div>
-                        <div class="description">1 of 30 students selected to participate in invitation-only program at Wayfair Headquarters in Boston, Massachusetts. During the Early Leaders Program, I was honored to participate in multiple workshops — where I engaged in enriching talks and activities and was able to learn about Wayfair culture.</div>
+                        <div class="description">1 of 30 students selected nationwide to attend an invite-only engineering leadership intensive at Wayfair HQ in Boston.</div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="event">
                         <div class="dot"></div>
-                        <div class="label">Texas Tech University Engineering Ambassador</div>
-                        <div class="description">I am currently an engineering ambassador for Texas Tech University — where I am honored to represent the Whitacre College of Engineering in recruitment events for prospective students and also providing resume reviews to current students.</div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="event">
-                        <div class="dot"></div>
-                        <div class="label">LYFE Mentor — Whitacre College of Engineering, Texas Tech University</div>
-                        <div class="description">Mentor and support first-year engineering students through the LYFE (Leading Your Future in Engineering) program, providing academic guidance, career preparation, and personal development support. Facilitate workshops, share resources, and foster a welcoming community to help students transition successfully into the engineering program.</div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="event">
-                        <div class="dot"></div>
-                        <div class="label">Resident Assistant — South Plains College Residence Life</div>
-                        <div class="description">As a Resident Assistant, I fostered a welcoming and inclusive environment for over 50 residents in on-campus housing. I organized community-building events, supported students through personal and academic challenges, and served as a first point of contact during emergencies — helping create a safe, supportive space where students could thrive.</div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="event">
-                        <div class="dot"></div>
-                        <div class="label">Peer Tutor — South Plains College TRIO Learning Center</div>
-                        <div class="description">Provided academic support to first-generation and low-income students through one-on-one tutoring in math, science, and computer science courses. Helped students build confidence, improve study strategies, and reach their academic goals in a supportive learning environment.</div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="event">
-                        <div class="dot"></div>
-                        <div class="label">Master Liberal Arts Tutor — South Plains College</div>
-                        <div class="description">Recognized for outstanding tutoring performance and student impact across liberal arts disciplines, demonstrating exceptional communication, dedication, and support in fostering academic success.</div>
+                        <div class="label">TTU Engineering Ambassador &amp; LYFE Mentor</div>
+                        <div class="description">Represent the Whitacre College of Engineering for recruitment, conduct resume clinics, and mentor first-year engineering cohorts.</div>
                     </div>
                 </div>
             </div>
@@ -292,31 +356,33 @@
 
     <!-- OTHER PROJECTS SECTION -->
     <section id="extra-projects">
-        <h2 class="section-title">Other Fun Projects</h2>
+        <h2 class="section-title">Other Projects &amp; Open Source</h2>
         <ul class="mini-projects">
-            <li><a href="https://github.com/Jouujo/GeminiAIInsights/tree/main" target="_blank">Gemini AI Insights Reviewer</a> — An AI-powered review analysis tool developed during my Consumer Insights Data Analytics Externship at Beats by Dre. Leveraging Google's Gemini 1.5 Flash model, this project synthesizes customer feedback into actionable insights by summarizing product reviews, highlighting sentiment trends, and suggesting data-driven improvements. Designed to support product and marketing teams in making informed decisions through scalable, automated analysis of qualitative feedback.</li>
-            <li><a href="https://github.com/Jouujo/GRADMAP-Research/blob/main/README.md" target="_blank">University of Maryland, GRAD-MAP Research</a> — A Python-based research project from the UMD GRAD-MAP Winter Workshop. I analyzed real exoplanet transit data using light curves and MCMC modeling to uncover planetary parameters.</li>
-            <li><a href="https://github.com/Jouujo" target="_blank">View my Github!</a></li>
+            <li><a href="https://github.com/Jouujo/GeminiAIInsights" target="_blank">Gemini AI Insights Reviewer</a> — Customer sentiment analysis engine utilizing Google Gemini 1.5 Flash to automatically summarize qualitative feedback and pinpoint feature requests.</li>
+            <li><a href="https://github.com/Jouujo/GRADMAP-Research" target="_blank">Exoplanet Transit Light Curve Modeling</a> — Transit modeling research utilizing MCMC simulation algorithms to estimate planetary radius and orbital inclination.</li>
+            <li><a href="https://github.com/Jouujo" target="_blank">Explore Full Repositories on GitHub →</a></li>
         </ul>
     </section>
 
     <!-- CONTACT SECTION -->
     <section id="contact" class="contact-section">
         <h2 class="section-title">Let's Connect</h2>
-        <p class="contact-text">I am happy to connect, speak about opportunities, and mentorship!</p>
+        <p class="contact-text">I'm currently seeking New Grad 2027 Software Engineering, Full-Stack, and Data Engineering roles. Always open to conversations, collaborative projects, and mentorship!</p>
         <ul class="contact-links">
-            <li><a href="mailto:georgejoanna086@gmail.com">📧 Gmail</a></li>
-            <li><a href="https://www.linkedin.com/in/joanna-chimalilo-766a15237" target="_blank">💼 LinkedIn</a></li>
-            <li><a href="https://github.com/Jouujo" target="_blank">💻 GitHub</a></li>
-            <li><a href="https://devpost.com/georgejoanna086?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" target="_blank">🚀 Devpost</a></li>
+            <li><a href="mailto:georgejoanna086@gmail.com">📧 Email: georgejoanna086@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/joanna-chimalilo-766a15237" target="_blank">💼 LinkedIn: joanna-chimalilo</a></li>
+            <li><a href="https://github.com/Jouujo" target="_blank">💻 GitHub: @Jouujo</a></li>
+            <li><a href="https://devpost.com/georgejoanna086" target="_blank">🚀 Devpost: @georgejoanna086</a></li>
         </ul>
     </section>
 
     <!-- CHATBOT -->
     <div class="chatbot-container">
-        <div id="chat-window"></div>
+        <div id="chat-window">
+            <div class="bot-msg">Joanna: Hi! Ask me anything about my experience, projects, skills, or research!</div>
+        </div>
         <div class="chat-input">
-            <input type="text" id="user-input" placeholder="Ask me anything..." />
+            <input type="text" id="user-input" placeholder="e.g. Tell me about your experience at Classed or STARLabs..." onkeydown="if(event.key==='Enter') sendMessage()" />
             <button onclick="sendMessage()">Send</button>
         </div>
     </div>
@@ -324,11 +390,13 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         const textArray = [
-            "My name is Joanna!",
-            "I am a rising junior at Texas Tech University, Wreck 'Em Tech!",
-            "I love all things software engineering & data!",
-            "I enjoy building projects that create a change!",
-            "Happy to connect!"
+            "Hi, I'm Joanna Chimalilo!",
+            "CS & Math @ Texas Tech (Graduating 2027)!",
+            "I like to research & tackle challenging technical projects.",
+            "Originally from Dar es Salaam, Tanzania 🇹🇿",
+            "My ultimate goal is giving back — which birthed Kimbilio la Binti. Stick around to learn more!",
+            "Actively seeking New Grad SWE & Data roles for 2027!",
+            "Wreck 'Em Tech! 👆🏽"
         ];
         const typedText = document.getElementById("typed-text");
         let index = 0;
@@ -345,16 +413,16 @@
                     index = (index + 1) % textArray.length;
                     setTimeout(typeLoop, 500);
                 } else {
-                    setTimeout(typeLoop, 50);
+                    setTimeout(typeLoop, 40);
                 }
             } else {
                 charIndex++;
                 typedText.textContent = currentText.substring(0, charIndex);
                 if (charIndex === currentText.length) {
                     isDeleting = true;
-                    setTimeout(typeLoop, 1200);
+                    setTimeout(typeLoop, 1400);
                 } else {
-                    setTimeout(typeLoop, 100);
+                    setTimeout(typeLoop, 80);
                 }
             }
         }
@@ -364,7 +432,7 @@
             navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
             pagination: { el: '.swiper-pagination', clickable: true },
             slidesPerView: 1,
-            spaceBetween: 30,
+            spaceBetween: 25,
             breakpoints: {
                 768: { slidesPerView: 2 },
                 1024: { slidesPerView: 3 }
@@ -374,45 +442,56 @@
         document.addEventListener("DOMContentLoaded", typeLoop);
 
         const chatbotResponses = {
-            "name": "Hi! I'm Joanna Chimalilo — a Computer Science + Economic Data Analysis student at Texas Tech.",
-            "school": "I'm a rising junior at Texas Tech University, Go Red Raiders!",
-            "projects": "I've worked on various projects including NestHub, InternTrackr, Beats Analytics, and a trading bot for UChicago. View my Github & LinkedIn for more!",
-            "interntrackr": "InternTrackr is a web app I'm building to help students track internship applications.",
-            "resume": "You can view my resume by clicking the button right under my projects!",
-            "contact": "Reach me at georgejoanna086@gmail.com or on LinkedIn!",
-            "favorite project": "One of my favorite projects is NestHub! I worked on it with 2 peers for a hackathon — an application made for immigrants by immigrants.",
-            "current job": "Joanna is currently a peer tutor at the TECHniques Center, where she works with students with learning disabilities, assisting them in CS subjects!",
-            "hi": "Hello! Ask me anything you would like to know about Joanna!",
-            "hey": "Hello! Ask me anything you would like to know about Joanna!",
-            "summer": "Joanna is currently an Undergraduate Researcher at the University of Maryland — Department of Astronomy and Physics, working under Dr. Hayley Beltz studying Time Variability with 3D Atmospheric Models of Hot Jupiters.",
-            "experience": "Joanna has interned at Beats by Dr. Dre, conducted research at UMD under Dr. Hayley Beltz, received an NSF CI-Compass Fellowship, and was selected for Wayfair's Early Leaders Program!"
+            "name": "Hi! I'm Joanna Chimalilo — a Computer Science & Mathematics student at Texas Tech graduating in Spring 2027.",
+            "school": "I study Computer Science with a Mathematics minor at Texas Tech University (Spring 2027). Wreck 'Em!",
+            "grad": "I am graduating in Spring 2027 and am actively looking for New Grad Software Engineering or Data Engineering positions starting Summer 2027!",
+            "role": "I am targeting New Grad Software Engineering, Full-Stack Web Development, and Data Engineering roles.",
+            "classed": "At Classed, I worked as a Software Engineer Intern developing full-stack web features, writing REST APIs, and optimizing database workflows.",
+            "projects": "Key projects include NestHub (Best DEI Hack winner at Black Wings Hacks), our HackWesTX 2nd Place DSA Web3 battle game, an algorithmic trading bot for the UChicago competition, and the Academic Mini Crossword app!",
+            "nesthub": "NestHub is an award-winning platform helping immigrants find verified housing, employment, and legal resources. Built with Python, BeautifulSoup, and React, it won Best DEI at Black Wings Hacks!",
+            "hackwestx": "At HackWesTX 2025, my team won 2nd Place for building an interactive DSA problem-solving arena featuring bot battles and Solana Web3 rewards.",
+            "research": "I'm a Research Engineer at STARLabs and previously conducted 3D atmospheric model simulations for Hot Jupiters at the University of Maryland (Dept. of Astronomy & Physics) under Dr. Hayley Beltz.",
+            "starlabs": "At STARLabs, I work as a Research Engineer designing and developing data and computational software pipelines.",
+            "fellowship": "I am a Break Through Tech Fellow ('26–'27) and an NSF CI-Compass Fellow ('24).",
+            "resume": "You can view my resume using the 'View My Resume' button right above the milestones section!",
+            "contact": "Feel free to email me at georgejoanna086@gmail.com or connect on LinkedIn at linkedin.com/in/joanna-chimalilo-766a15237!",
+            "hi": "Hello! Ask me anything about Joanna's projects, experience, research, or background!",
+            "hello": "Hi there! What would you like to learn about Joanna's work?"
         };
 
         function sendMessage() {
-            const input = document.getElementById("user-input").value.toLowerCase();
+            const inputEl = document.getElementById("user-input");
+            const input = inputEl.value.trim().toLowerCase();
+            if (!input) return;
+
             const chatWindow = document.getElementById("chat-window");
-            let reply = "Hmm, I'm still learning that! Try asking about my projects, experience, school, or resume.";
+            let reply = "I'm not sure about that yet, but feel free to ask about my SWE internship at Classed, STARLabs research, target roles, or resume!";
+
             for (const keyword in chatbotResponses) {
                 if (input.includes(keyword)) {
                     reply = chatbotResponses[keyword];
                     break;
                 }
             }
-            chatWindow.innerHTML += `<div class="user-msg">You: ${input}</div>`;
+
+            chatWindow.innerHTML += `<div class="user-msg">You: ${inputEl.value}</div>`;
             let botMsg = document.createElement("div");
             botMsg.className = "bot-msg";
             botMsg.textContent = "Joanna: ";
             chatWindow.appendChild(botMsg);
+            chatWindow.scrollTop = chatWindow.scrollHeight;
+
             let i = 0;
             function typeWriter() {
                 if (i < reply.length) {
                     botMsg.textContent += reply.charAt(i);
                     i++;
-                    setTimeout(typeWriter, 30);
+                    chatWindow.scrollTop = chatWindow.scrollHeight;
+                    setTimeout(typeWriter, 20);
                 }
             }
             typeWriter();
-            document.getElementById("user-input").value = "";
+            inputEl.value = "";
         }
     </script>
 </body>
