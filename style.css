@@ -13,7 +13,7 @@ body {
 
 #header {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-size: cover;
     background-position: center;
 }
@@ -32,14 +32,15 @@ nav {
 nav ul li {
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 10px 18px;
 }
 
 nav ul li a {
     color: #2f2f2f;
     text-decoration: none;
-    font-size: 18px;
-    font-family: 'Courier New';
+    font-size: 17px;
+    font-family: 'Courier New', monospace;
+    font-weight: 700;
     position: relative;
     display: inline-block;
 }
@@ -68,7 +69,7 @@ nav ul li a:hover::after {
 }
 
 .typewriter-container {
-    max-width: 500px;
+    max-width: 540px;
     margin: 0;
     text-align: left;
 }
@@ -86,16 +87,17 @@ nav ul li a:hover::after {
 
 .cursor {
     display: inline-block;
-    width: 2px;
-    margin-left: 2px;
+    width: 3px;
+    margin-left: 3px;
     background-color: #2f2f2f;
     animation: blink 0.7s steps(1) infinite;
 }
 
 #typed-text {
     font-family: 'Courier New', monospace;
-    font-size: 2rem;
+    font-size: 1.85rem;
     color: #2f2f2f;
+    font-weight: 700;
 }
 
 .hero-section {
@@ -119,33 +121,39 @@ nav ul li a:hover::after {
 }
 
 .hero-img {
-    max-width: 80%;
+    max-width: 85%;
     height: auto;
 }
 
 .social-links {
-    margin-top: 20px;
+    margin-top: 25px;
     display: flex;
-    gap: 16px;
+    gap: 20px;
     align-items: center;
 }
 
 .social-links a {
     color: #2f2f2f;
-    font-size: 30px;
-    transition: color 0.3s ease;
+    font-size: 28px;
+    transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .social-links a:hover {
     color: #e49ab0;
+    transform: translateY(-2px);
 }
 
 .scroll-indicator {
-    margin-top: 40px;
+    margin: 40px 0;
     text-align: center;
     font-size: 32px;
     color: #b58db6;
     animation: bounce 1.5s infinite;
+}
+
+.scroll-indicator a {
+    color: inherit;
+    text-decoration: none;
 }
 
 @keyframes bounce {
@@ -156,42 +164,43 @@ nav ul li a:hover::after {
 /* ===== ABOUT ===== */
 .about-section {
     background-color: #f9f6f7;
-    padding: 100px 10%;
+    padding: 80px 10%;
     color: #2f2f2f;
 }
 
 .section-title {
     font-size: 2rem;
-    font-family: 'Courier New';
-    font-weight: bolder;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
     margin-bottom: 20px;
 }
 
 .about-text p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: 'Courier New', monospace;
-    font-weight: bold;
-    line-height: 1.7;
-    max-width: 700px;
+    font-weight: 600;
+    line-height: 1.75;
+    max-width: 720px;
+    margin-bottom: 16px;
 }
 
 .about-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
+    gap: 50px;
 }
 
 .about-photo img {
-    max-width: 300px;
+    max-width: 320px;
     width: 100%;
     border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
 }
 
 /* ===== EXPERIENCE ===== */
 .experience-section {
-    padding: 100px 10%;
+    padding: 90px 10%;
     background-color: #fdf0f4;
     color: #2f2f2f;
 }
@@ -201,13 +210,13 @@ nav ul li a:hover::after {
     height: 4px;
     background: #e49ab0;
     border-radius: 2px;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
 }
 
 .experience-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    gap: 26px;
 }
 
 .exp-card {
@@ -249,14 +258,14 @@ nav ul li a:hover::after {
     margin-bottom: 14px;
 }
 
-.icon-work     { background: #fce4ec; }
-.icon-research { background: #ede7f6; }
+.icon-work       { background: #fce4ec; }
+.icon-research   { background: #ede7f6; }
 .icon-fellowship { background: #e3f2fd; }
-.icon-program  { background: #e8f5e9; }
+.icon-program    { background: #e8f5e9; }
 
 .exp-tag {
     display: inline-block;
-    font-size: 0.6rem;
+    font-size: 0.65rem;
     font-weight: 700;
     letter-spacing: 1.2px;
     text-transform: uppercase;
@@ -272,7 +281,7 @@ nav ul li a:hover::after {
 .tag-program    { background: #e8f5e9; color: #2e7d32; border: 1.5px solid #a5d6a7; }
 
 .exp-role {
-    font-size: 0.97rem;
+    font-size: 1rem;
     font-weight: 700;
     font-family: 'Courier New', monospace;
     color: #2f2f2f;
@@ -281,17 +290,17 @@ nav ul li a:hover::after {
 }
 
 .exp-org {
-    font-size: 0.83rem;
+    font-size: 0.85rem;
     font-family: 'Courier New', monospace;
     color: #e49ab0;
     font-weight: 700;
-    margin: 0 0 3px;
+    margin: 0 0 4px;
 }
 
 .exp-date {
-    font-size: 0.73rem;
+    font-size: 0.75rem;
     font-family: 'Courier New', monospace;
-    color: #bbb;
+    color: #888;
     margin: 0 0 14px;
 }
 
@@ -309,14 +318,14 @@ nav ul li a:hover::after {
 }
 
 .exp-bullets li {
-    font-size: 0.82rem;
+    font-size: 0.84rem;
     font-family: 'Courier New', monospace;
-    color: #555;
+    color: #444;
     font-weight: 600;
     line-height: 1.6;
     padding-left: 1.3rem;
     position: relative;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 }
 
 .exp-bullets li::before {
@@ -330,7 +339,7 @@ nav ul li a:hover::after {
 
 /* ===== PORTFOLIO ===== */
 .portfolio-section {
-    padding: 100px 10%;
+    padding: 90px 10%;
     background-color: #f9f6f7;
     color: #2f2f2f;
 }
@@ -339,142 +348,183 @@ nav ul li a:hover::after {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 60px;
+    gap: 50px;
     margin-top: 60px;
     flex-wrap: wrap;
 }
 
-.project-image { flex: 1; }
+.project-image { 
+    flex: 1; 
+    min-width: 280px;
+}
 
 .project-image img {
     width: 100%;
-    max-width: 400px;
-    border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    max-width: 420px;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
 }
 
 .project-info {
-    flex: 1;
+    flex: 1.2;
     text-align: left;
+    min-width: 280px;
 }
 
 .project-info h3 {
-    font-size: 1.6rem;
+    font-size: 1.45rem;
     margin-bottom: 12px;
     font-family: 'Courier New', monospace;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
 .project-info p {
     margin-bottom: 16px;
-    line-height: 1.6;
-    font-size: 1rem;
-    font-family: 'Courier New';
-    font-weight: 700;
+    line-height: 1.65;
+    font-size: 0.95rem;
+    font-family: 'Courier New', monospace;
+    font-weight: 600;
+    color: #3f3f3f;
 }
 
 .tech-icons {
     display: flex;
-    gap: 12px;
-    margin-bottom: 20px;
+    gap: 14px;
+    margin-bottom: 16px;
+    align-items: center;
 }
 
 .tech-icons img {
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.project-links-row {
+    display: flex;
+    gap: 18px;
 }
 
 .project-link {
     color: #2f2f2f;
     font-weight: bold;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    display: inline-block;
+}
+
+.project-link:hover {
+    color: #e49ab0;
+}
+
+.status-tag {
+    font-size: 0.72rem;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-family: 'Courier New', monospace;
+    font-weight: 700;
+}
+
+.award-tag {
+    background-color: #e49ab0;
+}
+
+.in-progress {
+    background-color: #cdb4db;
 }
 
 .resume-download {
-    margin-top: 40px;
+    margin-top: 60px;
     text-align: center;
 }
 
 .resume-btn {
     background-color: #cdb4db;
     color: white;
-    padding: 14px 28px;
+    padding: 14px 30px;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
     display: inline-block;
     font-family: 'Courier New', monospace;
 }
 
 .resume-btn:hover {
     background-color: #e49ab0;
+    transform: translateY(-2px);
 }
 
 /* ===== TIMELINE ===== */
 #timeline {
-    padding: 100px 10%;
-    background-color: #f9f6f7;
+    padding: 90px 10%;
+    background-color: #fdf0f4;
 }
 
 .event {
     position: relative;
-    margin: 24px auto;
-    background: #fff5f7;
-    border-radius: 12px;
-    padding: 32px 24px 24px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 350px;
-    min-height: 180px;
+    margin: 20px auto;
+    background: #ffffff;
+    border: 1.5px solid #f5c6d8;
+    border-radius: 14px;
+    padding: 28px 22px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+    max-width: 360px;
+    min-height: 220px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: transform 0.3s ease;
+    justify-content: flex-start;
 }
 
 .label {
     font-weight: bold;
     font-family: 'Courier New', monospace;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     color: #2f2f2f;
     margin-bottom: 10px;
     text-align: center;
 }
 
 .description {
-    font-size: 0.98rem;
-    margin-top: 5px;
-    color: #2f2f2f;
+    font-size: 0.88rem;
+    margin-top: 6px;
+    color: #444;
     display: block;
     text-align: center;
     font-family: 'Courier New', monospace;
+    line-height: 1.55;
 }
 
 /* ===== EXTRA PROJECTS ===== */
 #extra-projects {
-    padding: 100px 10%;
+    padding: 80px 10%;
     background-color: #f9f6f7;
 }
 
 .mini-projects {
-    margin-top: 30px;
+    margin-top: 25px;
     padding-left: 20px;
-    line-height: 1.6;
-    font-size: 1rem;
+    line-height: 1.7;
+    font-size: 0.95rem;
     font-family: 'Courier New', monospace;
-    font-weight: 400;
 }
 
 .mini-projects li {
     margin-bottom: 16px;
     font-family: 'Courier New', monospace;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .mini-projects li a {
     color: #c8102e;
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
     font-family: 'Courier New', monospace;
 }
@@ -484,28 +534,23 @@ nav ul li a:hover::after {
     color: #e49ab0;
 }
 
-.status-tag {
-    font-size: 0.8rem;
-    color: #fff;
-    background-color: #ffb3c6;
-    padding: 3px 8px;
-    border-radius: 6px;
-    margin-left: 8px;
-}
-
 /* ===== CONTACT ===== */
 .contact-section {
-    padding: 100px 10%;
-    background-color: #f9f6f7;
+    padding: 90px 10%;
+    background-color: #ffffff;
     color: #2f2f2f;
     text-align: center;
 }
 
 .contact-text {
-    margin-bottom: 24px;
-    font-size: 1.1rem;
+    margin-bottom: 28px;
+    font-size: 1.05rem;
     font-family: 'Courier New', monospace;
-    font-weight: 700;
+    font-weight: 600;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
 }
 
 .contact-links {
@@ -513,15 +558,17 @@ nav ul li a:hover::after {
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 14px;
     align-items: center;
 }
 
 .contact-links li a {
-    color: #c8102e;
-    font-weight: 600;
+    color: #2f2f2f;
+    font-weight: 700;
     text-decoration: none;
     font-family: 'Courier New', monospace;
+    font-size: 1rem;
+    transition: color 0.2s ease;
 }
 
 .contact-links li a:hover {
@@ -531,34 +578,49 @@ nav ul li a:hover::after {
 
 /* ===== CHATBOT ===== */
 .chatbot-container {
-    max-width: 420px;
-    margin: 80px auto;
+    max-width: 480px;
+    margin: 60px auto 90px;
     background: #fff5f7;
+    border: 1.5px solid #f5c6d8;
     border-radius: 16px;
-    padding: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 22px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     font-family: 'Courier New', monospace;
 }
 
 #chat-window {
-    max-height: 250px;
+    max-height: 260px;
     overflow-y: auto;
     margin-bottom: 16px;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     color: #2f2f2f;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .user-msg {
     color: #2f2f2f;
     font-weight: bold;
     font-family: 'Courier New', monospace;
+    background: #fce4ec;
+    padding: 8px 12px;
+    border-radius: 10px;
+    align-self: flex-end;
+    max-width: 80%;
 }
 
 .bot-msg {
     color: #2f2f2f;
-    font-style: italic;
     font-family: 'Courier New', monospace;
-    font-weight: 700;
+    font-weight: 600;
+    background: #ffffff;
+    border: 1px solid #f5c6d8;
+    padding: 8px 12px;
+    border-radius: 10px;
+    align-self: flex-start;
+    max-width: 85%;
+    line-height: 1.5;
 }
 
 .chat-input {
@@ -568,19 +630,27 @@ nav ul li a:hover::after {
 
 #user-input {
     flex: 1;
-    padding: 10px;
-    border: 1px solid #e49ab0;
+    padding: 10px 14px;
+    border: 1.5px solid #e49ab0;
     border-radius: 8px;
     font-family: 'Courier New', monospace;
+    font-size: 0.88rem;
+}
+
+#user-input:focus {
+    outline: none;
+    border-color: #cdb4db;
 }
 
 button {
-    padding: 10px 16px;
+    padding: 10px 18px;
     background: #e49ab0;
     color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
     transition: background 0.3s ease;
 }
 
@@ -604,19 +674,28 @@ html {
     }
 
     .about-photo {
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
     .project-flex {
         flex-direction: column;
-        text-align: center;
+        text-align: left;
     }
 
     .project-info {
-        margin-top: 30px;
+        margin-top: 15px;
     }
 
     .experience-grid {
         grid-template-columns: 1fr;
+    }
+
+    .hero-section {
+        flex-direction: column-reverse;
+        padding-top: 40px;
+    }
+
+    #typed-text {
+        font-size: 1.5rem;
     }
 }
